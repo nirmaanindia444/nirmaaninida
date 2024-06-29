@@ -325,6 +325,69 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     margin: 60px 0 20px;
 }
 
+/* Imp clients */
+/* Important Clients Section */
+#important_clients {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+  }
+  
+  #important_clients .container {
+    max-width: 1200px;
+  }
+  
+  #important_clients .head_title {
+    margin-bottom: 50px;
+  }
+  
+  #important_clients .head_title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #important_clients .head_title p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  #important_clients .client_city {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  #important_clients .client_city h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #important_clients .client_city ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #important_clients .client_city ul li {
+    font-size: 18px;
+    line-height: 2.5;
+    color: #666;
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    #important_clients .client_city ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+
 /* Services */
 #services h2 {
     margin: 85px 0 50px;
