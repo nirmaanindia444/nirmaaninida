@@ -138,6 +138,7 @@ a:hover,a:focus{ text-decoration: none}
     overflow: hidden;
     padding: 10px 0;
 }
+
 .list-inline.info {
     float: left;
     margin: 0;
@@ -600,6 +601,41 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     text-transform: uppercase;
 }
 
+.hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .hover-zoom:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .client-card {
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 2.1rem; /* ⬆️ Bigger text */
+    color: #212121;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 2px solid transparent;
+    height: 100%;
+    margin: 10px 0; /* ⬆️ Vertical spacing */
+  }
+  
+  .client-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(255, 193, 7, 0.25); /* Yellow glow */
+    border-color: #ffc107;
+    color: #ffc107;
+    background-color: #fffef2;
+    cursor: pointer;
+  }
+  
+
 /* Contact form */
 #contact_form {
     background: #fedb5d none repeat scroll 0 0;
@@ -974,6 +1010,54 @@ footer::after {
 
 
 }
+
+@media (max-width: 576px) {
+    .top_nav .container {
+      display: flex;
+      flex-direction: column;
+      padding: 6px 12px;
+      gap: 4px;
+    }
+  
+    .top_nav .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+    }
+  
+    .top_nav .info li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+  
+    .top_nav .info li i {
+      margin-right: 5px;
+      font-size: 13px;
+    }
+  
+    .top_nav .social_icon {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .top_nav .social_icon li {
+      font-size: 15px;
+    }
+  
+    .top_nav {
+      line-height: 1.2;
+    }
+  }
+  
 
 @media (max-width: 479px) {
     h1 {
