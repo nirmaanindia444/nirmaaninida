@@ -562,25 +562,49 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 .cardContainer{
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 2%;
     padding-bottom: 5%;
     flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .card{
     width: 250px;
-    padding: 1%;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin-top: 3%;
+    padding: 20px 10px 20px 17px;
+    border: none;
+    border-radius: 14px;
+    margin-top: 2%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    background-color: #ffc107cf;
+    font-weight: 700;
+    color: #212121;
+    height: 330px;
+    
 }
-.card:hover{
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ .card:hover {
+    
+    box-shadow: 20px 30px 35px 10px rgba(209, 200, 30, 0.25); /* Yellow glow */
+    border-color: #ffc107;
+    color: #ffc107;
+    background-color: #fffef2;
+    cursor: pointer;
+    border: 1px solid #ffc107;
+}
+
+.card img{
+    border-radius: 14px;
+    margin-bottom: 10px;
+    height: 200px;
 }
 .downloadPDFCard{
     display: flex;
     justify-content: center;
     border: 1px solid rgb(66, 66, 147);
     background-color: #194663;
+    color: white;
+    border-radius: 4px;
+}
+.downloadPDFCard:hover{
     color: white;
 }
 
