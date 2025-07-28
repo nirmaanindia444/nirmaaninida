@@ -552,7 +552,41 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     color:#ffcb0f;
 }
 
+/* Download pdf */
+
+.downloadPDFHeading{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+}
+.card{
+    width: 250px;
+    padding: 1%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.downloadPDFCard{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(66, 66, 147);
+    background-color: #194663;
+    color: white;
+}
+
+
 /* Testimonial */
+
 #testimonial {
     background: url("../images/testimonial_bg.jpg") no-repeat scroll 0 0;
     background-size:cover;
