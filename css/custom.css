@@ -114,8 +114,8 @@ a:hover,a:focus{ text-decoration: none}
     height: 70px;
 }
 .navbar-brand{
-    height: 90px;
-    width: 90px; 
+    height: 100px;
+    width: 100px; 
     position: absolute;
     left: 0%;
     
@@ -180,11 +180,11 @@ a:hover,a:focus{ text-decoration: none}
 }
 /* Main Nav */
 nav.navbar.bootsnav {
-    background: #222533 none repeat scroll 0 0;
+    background: #ffffff none repeat scroll 0 0;
     border: 0 none;
 }
 nav.navbar.bootsnav ul.nav > li > a {
-    color: #fff;
+    color: #070707;
 }
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus {
     color: #aaa;
@@ -193,12 +193,42 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     /* height: auto; */
     padding: 10px;
 }
+/* Navbar Menu Container */
 #navbar-menu {
-    margin: 6px 0;
+    margin: 10px 0;
 }
+
+/* Menu List */
 .nav.navbar-nav.menu {
     float: right;
+    display: flex;
+    gap: 30px; /* space between menu items */
+    font-family: 'futura_ltbook', sans-serif;
+    font-size: 18px; /* slightly bigger */
+    font-weight: 500;
 }
+
+/* Menu Links */
+.nav.navbar-nav.menu li a {
+    color: #222;
+    text-transform: uppercase; /* optional for modern look */
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+
+
+/* Responsive: Stack menu on small screens */
+@media (max-width: 768px) {
+    .nav.navbar-nav.menu {
+        flex-direction: column;
+        gap: 15px;
+        float: none;
+        text-align: center;
+    }
+}
+
 .attr-nav {
     margin: 5px -10px 0 0;
 }
