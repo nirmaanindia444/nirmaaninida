@@ -1371,5 +1371,16 @@
         });
       });
     </script>
+    <script>
+
+      document.querySelectorAll(".downloadPDFCard").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          e.target.textContent = "Downloading...";
+          setTimeout(() => {
+            e.target.textContent = "Download PDF";
+          }, 1500); 
+        });
+      });
+    </script>
   </body>
 </html>
